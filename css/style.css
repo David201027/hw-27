@@ -5,7 +5,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  height: 320px;
+  height: 340px;
   width: 50px;
   background-color: #333;
   transition: width 0.3s;
@@ -16,7 +16,7 @@ body {
 }
 .menu-content {
   display: none;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 .menu-container:hover .menu-content {
   display: block;
@@ -38,5 +38,5 @@ body {
   transform: rotate(0deg);
   color: white;
   text-align: center;
-  padding: 16px;
+  padding: 120px 16px;
 }
