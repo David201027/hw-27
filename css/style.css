@@ -1,14 +1,11 @@
-body {
-  margin: 0;
-}
 .menu-container {
   position: fixed;
   left: 0;
   top: 0;
   height: 340px;
-  width: 50px;
-  background-color: #333;
-  transition: width 0.3s;
+  width: 30px;
+  background-color: gray;
+  transition: width 1s;
   overflow-x: hidden;
 }
 .menu-container:hover {
@@ -22,7 +19,7 @@ body {
   display: block;
 }
 .menu-container:hover .menu-label{
-    display: none;
+  display: none;
 }
 .menu-item {
   color: white;
@@ -31,12 +28,27 @@ body {
   display: block;
 }
 .menu-item:hover {
-  background-color: #575757;
+  color: orange;
 }
 .menu-label {
   writing-mode: vertical-rl;
-  transform: rotate(0deg);
   color: white;
   text-align: center;
-  padding: 120px 16px;
+  padding: 120px 5px;
+}
+.item{
+  list-style: none;
+  position: relative;
+}
+.menu-item::before{
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: orange;
+  border: 1px black solid;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 21px;
+  left: 0;
 }
